@@ -1,1 +1,1 @@
-# Trabajos prácticos de la materia Laboratorio de Computación 2 UTNFRA
+Trabajos prácticos de la materia Laboratorio de Computación 2 UTNFRA
