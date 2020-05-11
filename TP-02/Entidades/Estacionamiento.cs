@@ -11,14 +11,24 @@ namespace Entidades
     /// </summary>
     public sealed class Estacionamiento
     {
+        /// <summary>
+        /// Atributos de la clase
+        /// </summary>
         List<Vehiculo> vehiculos;
         int espacioDisponible;
+
+        /// <summary>
+        /// Enum del tipo
+        /// </summary>
         public enum ETipo
         {
             Moto, Automovil, Camioneta, Todos
         }
 
         #region "Constructores"
+        /// <summary>
+        /// En los constructores se inicializa la lista y el espacio disponible
+        /// </summary>
         private Estacionamiento()
         {
             this.vehiculos = new List<Vehiculo>();

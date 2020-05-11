@@ -12,18 +12,35 @@ namespace Entidades
     /// </summary>
     public abstract class Vehiculo
     {
+        /// <summary>
+        /// Enum de la marca
+        /// </summary>
         public enum EMarca
         {
             Chevrolet, Ford, Renault, Toyota, BMW, Honda
         }
+
+        /// <summary>
+        /// Enum dek tamaño
+        /// </summary>
         public enum ETamanio
         {
             Chico, Mediano, Grande
         }
+
+        /// <summary>
+        /// Atributos de la clase
+        /// </summary>
         private EMarca marca;
         private string chasis;
         private ConsoleColor color;
 
+        /// <summary>
+        /// Constructor de la clase, inicializa los valores de la marca, chasis y color
+        /// </summary>
+        /// <param name="marca"></param>
+        /// <param name="chasis"></param>
+        /// <param name="color"></param>
         public Vehiculo(EMarca marca, string chasis, ConsoleColor color)
         {
             this.marca = marca;
@@ -45,6 +62,11 @@ namespace Entidades
             return (string) this;
         }
 
+        /// <summary>
+        /// Sobrecarga de forma explicita para recibir un Vehiculo y devolver una cadena de strings
+        /// </summary>
+        /// <param Vehiculo="p"></param>
+        /// <returns>cadena de string con todos los datos</returns>
         public static explicit operator string(Vehiculo p)
         {
             StringBuilder sb = new StringBuilder();

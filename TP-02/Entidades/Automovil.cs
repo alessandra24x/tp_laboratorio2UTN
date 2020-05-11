@@ -10,6 +10,9 @@ namespace Entidades
 {
     public class Automovil : Vehiculo
     {
+        /// <summary>
+        /// Atributos de la clase
+        /// </summary>
         public enum ETipo { Monovolumen, Sedan }
         private ETipo tipo;
 
@@ -39,6 +42,10 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Publica todos los datos del Vehiculo
+        /// </summary>
+        /// <returns>cadena de string con todos los datos</returns>
         public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
