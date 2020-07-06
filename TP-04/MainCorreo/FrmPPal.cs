@@ -59,7 +59,7 @@ namespace MainCorreo
             try
             {
                 if (string.IsNullOrWhiteSpace(txtDireccion.Text) || !(mtxtTrackingID.MaskCompleted))
-                    MessageBox.Show("Todos los campos deben contener información", "Llenar Campos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Todos los campos deben contener información", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
                 {
                     Paquete paquete = new Paquete(txtDireccion.Text, mtxtTrackingID.Text);
